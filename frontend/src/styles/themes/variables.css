@@ -1,0 +1,41 @@
+:root {
+  /* Brand colors */
+  --color-primary: #142d4e;
+  --color-primary-hover: #20446e;
+  --color-accent: #16a6a1;
+
+  /* Backgrounds */
+  --color-background: #f4f7fa;
+  --color-surface: #ffffff;
+
+  /* Text */
+  --color-text: #253449;
+  --color-text-muted: #64748b;
+
+  /* Borders */
+  --color-border: #dfe5ec;
+
+  /* Repair statuses */
+  --color-pending: #d97706;
+  --color-repairing: #2563eb;
+  --color-ready: #15803d;
+  --color-claimed: #64748b;
+
+  /* Typography */
+  --font-primary: Inter, Arial, sans-serif;
+
+  /* Spacing */
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 32px;
+
+  /* Border radius */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+
+  /* Shadows */
+  --shadow-card: 0 4px 16px rgba(20, 45, 78, 0.06);
+}

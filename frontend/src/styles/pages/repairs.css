@@ -1,0 +1,271 @@
+.repairs-page {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding-bottom: 32px;
+}
+
+.page-heading {
+  margin-bottom: 24px;
+}
+
+.page-heading h1 {
+  margin: 0 0 8px;
+  color: #171e19;
+  font-size: 30px;
+  font-weight: 750;
+  letter-spacing: -0.8px;
+}
+
+.page-heading p {
+  margin: 0;
+  color: #68746b;
+  font-size: 14px;
+}
+
+.repairs-page .form-error {
+  padding: 12px 16px;
+  margin-bottom: 16px;
+
+  background: #fff1f1;
+  color: #ad3030;
+  border: 1px solid #f0cccc;
+  border-radius: 10px;
+
+  font-size: 13px;
+}
+
+@media (max-width: 768px) {
+  .page-heading h1 {
+    font-size: 25px;
+  }
+
+  .page-heading {
+    margin-bottom: 20px;
+  }
+}
+
+.repairs-page .page-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 26px;
+}
+
+.register-repair-button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+
+  padding: 12px 20px;
+
+  background: #216e45;
+  border: 1px solid #216e45;
+  border-radius: 11px;
+
+  color: #ffffff;
+  font: inherit;
+  font-size: 13px;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease;
+}
+
+.register-repair-button:hover {
+  background: #185434;
+  transform: translateY(-1px);
+}
+
+.register-repair-button span {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1;
+}
+
+.back-to-records-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+
+  padding: 12px 18px;
+
+  background: #ffffff;
+  border: 1px solid #dfe7e0;
+  border-radius: 11px;
+
+  color: #34443a;
+  font: inherit;
+  font-size: 13px;
+  font-weight: 650;
+
+  cursor: pointer;
+}
+
+.back-to-records-button:hover {
+  background: #edf6ef;
+  border-color: #bad7c4;
+}
+
+@media (max-width: 600px) {
+  .register-repair-button,
+  .back-to-records-button {
+    width: 100%;
+  }
+}
+
+/* LIVE REPAIR SEARCH */
+
+.repairs-page .repair-search-panel {
+  margin-bottom: 22px;
+  padding: 18px 20px;
+  background: #ffffff;
+  border: 1px solid #e1e9e3;
+  border-radius: 14px;
+  box-shadow: 0 3px 12px rgba(20, 40, 25, 0.035);
+}
+
+.repairs-page .repair-search-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.repairs-page .repair-search-heading label {
+  color: #25372b;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.repairs-page .repair-search-count {
+  color: #68746b;
+  font-size: 12px;
+  font-weight: 550;
+}
+
+.repairs-page .repair-search-field {
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-width: 0;
+}
+
+.repairs-page .repair-search-icon {
+  position: absolute;
+  left: 14px;
+  color: #7d8b80;
+  pointer-events: none;
+}
+
+.repairs-page .repair-search-input {
+  box-sizing: border-box;
+  width: 100%;
+  min-width: 0;
+  min-height: 46px;
+  padding: 11px 75px 11px 43px;
+  background: #fbfcfb;
+  border: 1px solid #dfe7e0;
+  border-radius: 10px;
+  color: #202820;
+  font: inherit;
+  font-size: 13px;
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.repairs-page .repair-search-input::placeholder {
+  color: #92a097;
+}
+
+.repairs-page .repair-search-input:focus {
+  outline: none;
+  border-color: #216e45;
+  box-shadow: 0 0 0 3px rgba(33, 110, 69, 0.1);
+}
+
+/* Replace the browser's built-in search X with the custom Clear button. */
+.repairs-page .repair-search-input::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.repairs-page .repair-search-clear {
+  position: absolute;
+  right: 8px;
+  padding: 7px 10px;
+  background: #edf5ef;
+  border: 0;
+  border-radius: 7px;
+  color: #216e45;
+  font: inherit;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.repairs-page .repair-search-clear:hover,
+.repairs-page .repair-search-reset:hover {
+  background: #dfecdf;
+}
+
+.repairs-page .repair-search-clear:focus-visible,
+.repairs-page .repair-search-reset:focus-visible {
+  outline: 2px solid #216e45;
+  outline-offset: 2px;
+}
+
+.repairs-page .repair-search-empty {
+  padding: 42px 20px;
+  background: #ffffff;
+  border: 1px dashed #cdded1;
+  border-radius: 14px;
+  text-align: center;
+}
+
+.repairs-page .repair-search-empty h2 {
+  margin: 0 0 8px;
+  color: #26382d;
+  font-size: 17px;
+}
+
+.repairs-page .repair-search-empty p {
+  margin: 0 0 16px;
+  color: #68746b;
+  font-size: 13px;
+}
+
+.repairs-page .repair-search-reset {
+  padding: 9px 15px;
+  background: #edf5ef;
+  border: 1px solid #cfe2d3;
+  border-radius: 8px;
+  color: #216e45;
+  font: inherit;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .repairs-page .repair-search-panel {
+    padding: 15px;
+  }
+
+  .repairs-page .repair-search-count {
+    width: 100%;
+  }
+
+  .repairs-page .repair-search-input {
+    font-size: 12px;
+  }
+}

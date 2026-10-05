@@ -1,0 +1,14 @@
+.app-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: var(--space-xl);
+}
+
+.app-container header {
+  margin-bottom: var(--space-xl);
+}
+
+.app-container header h1 {
+  color: var(--color-primary);
+  margin-bottom: var(--space-xs);
+}

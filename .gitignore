@@ -1,0 +1,10 @@
+frontend/node_modules/
+frontend/dist/
+
+wincore-upload/
+
+backend/config/database.php
+backend/config/registration.php
+
+.env
+.env.*
